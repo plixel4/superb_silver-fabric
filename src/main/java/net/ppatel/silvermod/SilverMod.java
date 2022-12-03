@@ -1,6 +1,7 @@
 package net.ppatel.silvermod;
 
 import net.fabricmc.api.ModInitializer;
+import net.ppatel.silvermod.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -10,6 +11,8 @@ public class SilverMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+
+		ModItems.registerModItems();
 
 	}
 }
