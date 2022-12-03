@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "silvermod",
+  "version": "${version}",
+
+  "name": "Superb Silver",
+  "description": "Superb Silver by plixel4 is a mod that adds silver to Minecraft",
+  "authors": [
+    "plixel4"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "ARR",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.ppatel.silvermod.SilverMod"
+    ],
+    "client": [
+      "net.ppatel.silvermod.SilverModClient"
+    ]
+  },
+  "mixins": [
+    "silvermod.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.10",
+    "fabric-api": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
